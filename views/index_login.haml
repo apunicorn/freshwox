@@ -1,0 +1,28 @@
+!!!
+%html
+	%head 
+		%title Log in to Wox
+		%link{:href=>"index_login.css", :rel=>"stylesheet", :type=>"text/css"}
+	%body
+		%div#centerdiv{ :style=>"" }
+			%p.title
+				%a{:href=>"/"} Home
+				%div.orangebox
+					%p.register
+						%a{:href=>"/register"} Register
+					%div.majorbubble{:style=>"z-index:1; visibility:show;"}
+						%form{:method=>"POST", :action=>""}
+							- if @new_user
+								%div.dontexist
+									%h2 That user doesn't exist. Do you want to register?
+							- if @wrong_pass
+								%div.badpass
+									%h2 Wrong password, bozo
+							&nbsp
+							%h2 Your name:
+							%input.name{:type => "text", :name=>"name", :maxlength=>"15"}
+							&nbsp
+							%h2 Password:
+							%input.password{:type => "password", :name=>"pass"}
+						%p.submitbutton
+							%a{:href=>'#', :onclick=>"document.forms[0].submit()"} submit

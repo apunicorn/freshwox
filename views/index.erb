@@ -1,0 +1,20 @@
+%html
+  %head
+    %titleFresh Wox
+    %link{:href="index.css" rel="stylesheet", :type="text/css"}
+  %body
+  %h1 Welcome to Fresh Wox!
+  %a{:href => "http://127.0.0.1:4567/add"}
+	%input{:type => "button", :value=> "Add New Walk"}
+  %a{:href => "http://127.0.0.1:4567/advice"} 
+	%input{:type => "button", :value=> "Advice Column!"}
+  %a{:href => "http://127.0.0.1:4567/add"} 
+	%input{:type => "button", :value=> "Add New Walk"}
+	%table{:cellpadding=>"0", :cellspacing=>"4", :border=>"0"}
+	%ol= @walks.each { |walk|
+		%li
+			%div Walk from 
+			= walk.start 
+			to 
+			= walk.description
+	= }

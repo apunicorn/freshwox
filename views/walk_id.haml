@@ -1,0 +1,27 @@
+!!!
+%html
+	%head
+		%title Walk #{params[:walk_id]} Description
+		%link{:href=>"/walk_id.css", :rel=>"stylesheet", :type=>"text/css"}
+	%body
+		%div#centerdiv{ :style=>"" }
+			%p.title
+				%a{:href=>"/"} Home
+				%div.orangebox
+					%div.walknamebubble
+						%h1 #{@walk.walkname}
+					%p
+					%div.realdescription
+						%div.descriptiontext
+							%h2 #{@walk.description}
+					%div.description
+						%div.coordinatestext
+							%h2 From #{@walk.start}
+							%h2 To End
+						%img.mapbackground{:src=>"/mapbackground.png"}
+						%img.map{:src=>map_url( @walk, "580x380" ) }
+					%img.mapbubble{:src=>"/mapbutton.png"}
+					= "<br/>"*25 				
+					&nbsp
+					%div.submittedby
+						%h3 #{@walk.login.name}

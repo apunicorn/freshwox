@@ -1,0 +1,28 @@
+!!!
+%html
+	%head 
+		%title Registration
+		%link{:href=>"/register.css", :rel=>"stylesheet", :type=>"text/css"}
+	%body
+		%div#centerdiv{ :style=>"" }
+			%p.title
+				%a{:href=>"/"} Home
+				%div.orangebox
+					%img.arrow{:src=>"/arrow.png"}
+					%img.or{:src=>"/Or.png"}
+					%p.login
+						%a{:href=>"/login"} Login
+					%div.majorbubble{:style=>"z-index:1; visibility:show;"}
+						%form{:method=>"POST", :action=>""}
+							- if @old_user
+								%h2 That user already exists. Try again. 
+							&nbsp
+							%h2 Your name:
+							%input.newname{:type => "text", :name=>"name", :maxlength=>"15"}
+							&nbsp
+							%h2 Password:
+							%input.newpass{:type => "password", :name=>"pass"}
+							%h2 Email:
+							%input.email{:type=> "text", :name=>"email"}
+						%p.submitbutton
+							%a{:href=>'#', :onclick=>"document.forms[0].submit()"} submit

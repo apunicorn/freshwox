@@ -1,0 +1,150 @@
+body {
+	background-color: #E4D0E6;
+	color: #330504;
+	text-align: center; 
+	margin: 0;
+	padding: 0;
+}
+
+#centerdiv {
+	background-image: url('Addwalkbackground.png');
+	background-repeat: no-repeat;
+	background-position: -170px 160px;
+	/*height:850px;*/
+	margin-left:auto;margin-right:auto;position:relative; 
+	width:880px;
+	
+	padding-bottom: 255px;
+}
+
+.title {
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+	width:1250px;
+	height:150px;
+	text-align: center;
+	text-indent:-9999px;
+	position: absolute;
+	left:-170px;
+	top: -11px;
+}
+
+.title a {
+	display:block;
+	width:100%;
+	height:100%;
+	background:transparent url(Freshwox.png) no-repeat center;
+	outline:none;
+}
+
+.orangebox {
+	background-color: #feb63e;
+	width:720px;
+	min-height: 550px;
+	position: relative;
+	left: 80px;
+	top: 270px;
+	text-align: center;
+}
+
+.yellowbubble {
+	background: url('Addwalkbubble.png') no-repeat center;
+	width: 258px;
+	height: 140px;
+	position: absolute;
+	left: 90px;
+	top: 20px;
+	padding-top: 20px;
+	font-family: Tahoma;
+	color: #d057b4;
+	font-weight: bold;
+	text-shadow: -1px 0 #644504, 0 1px #644504, 1px 0 #644504, 1 -1px #644504;
+}
+
+.yellowbubblebig {
+	background: url('Addwalkbubblebig.png') no-repeat center;
+	width: 358px;
+	height:255px;
+	position: absolute;
+	left: 330px;
+	top: 80px;
+	padding-top: 20px;
+	font-family: Tahoma;
+	color: #d057b4;
+	font-weight: bold;
+	text-shadow: -1px 0 #644504, 0 1px #644504, 1px 0 #644504, 1 -1px #644504;
+}
+
+.yellowbubblehuge {
+	background: url('Addwalkbubblehuge.png') no-repeat center;
+	width: 370px;
+	height: 255px;
+	position: absolute;
+	left: 40px;
+	top: 170px;
+	padding-top: 120px;
+	font-family: Tahoma;
+	color: #d057b4;
+	font-weight: bold;
+	text-shadow: -1px 0 #644504, 0 1px #644504, 1px 0 #644504, 1 -1px #644504;
+}
+
+.startbox {
+	/*border: 2px solid #330504;*/
+	background: #E4D0E6;
+}
+
+.namebox {
+	background: #E4D0E6;
+}
+
+.description {
+	background: #E4D0E6;
+	border: 2px inset;
+}
+
+.lookup {
+	color: #d057b4;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.submitbutton {
+	display:block;
+	width:97px;
+	height:52px;
+	text-indent:-9999px;
+	position: absolute;
+	left:480px;
+	top:370px;
+}
+
+.submitbutton a {
+	display:block;
+	width:100%;
+	height:100%;
+	background:transparent url(Submit.png) no-repeat top left;
+	outline:none;
+}
+	
+div#map_canvas {
+	display: none;
+	position: relative;
+	left: 100px;
+	margin-top: 500px;
+	border: thick solid #d057b4;
+}
+
+.uploadstuff {
+	position: absolute;
+	left: 280px;
+	top: 30px;
+}
+
+.explain {
+	position: absolute;
+	left: 300px;
+	top: 800px;
+}
